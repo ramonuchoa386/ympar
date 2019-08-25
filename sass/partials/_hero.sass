@@ -1,0 +1,31 @@
+section#hero
+    width: 100vw
+    height: 100vh
+    background-image: linear-gradient(to bottom, rgba($blue, .6), rgba($blue, .6)), url(img/heroBg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 25vh
+    p, a
+        color: white
+    p
+        margin-bottom: 30px
+    h1
+        color: rgb(241, 249, 216)
+        margin-bottom: 150px
+        position: relative
+        &:after
+            content: ''
+            width: 60px
+            height: 2px
+            background-color: white
+            display: block
+            margin: 20px auto 0
+    a
+        background-color: $pink
+        &:first-of-type
+            margin-bottom: 30px
