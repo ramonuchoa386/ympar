@@ -1,7 +1,20 @@
 nav.main-navigation
+    padding: 10px 0
+    +breakpoint
+        padding-left: 100px
+        padding-right: 100px
+        position: relative
+    img.logo, button.menu-toggle
+        display: block
+    img.logo
+        width: 95px
+        margin: 0 auto
     button.menu-toggle
         border: none
         background-color: transparent
+        margin: 30px auto 0
+        +breakpoint
+            display: none
         span.menuBtnBar
             display: block
             width: 16px
@@ -10,3 +23,38 @@ nav.main-navigation
             background-color: black
             &:not(:first-of-type)
                 margin-top: 3px
+    div.menu-menu-container
+        +breakpoint
+            position: absolute
+            top: 50%
+            left: 10%
+            width: 80%
+        ul.menu.nav-menu
+            display: none
+            list-style: none
+            text-align: center
+            padding: 20px 0
+            +breakpoint
+                padding: 0
+            li
+                &:not(:first-of-type)
+                    margin-top: 30px
+                    +breakpoint
+                        margin-top: 0px
+                &:nth-of-type(3)
+                    +breakpoint
+                        margin-right: 300px
+                a
+                    text-decoration: none
+                    text-transform: uppercase
+                    color: black
+                    font-size: .8rem
+            +breakpoint
+                display: flex
+                justify-content: space-between
+                align-items: center
+
+nav.toggled
+    div.menu-menu-container
+        ul.menu.nav-menu
+            display: block
