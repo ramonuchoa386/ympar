@@ -1,0 +1,32 @@
+section.sectionInspiration
+    h2
+        color: $blue
+    div.sectionWrapper
+        background-color: $blue
+        +breakpoint
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            position: relative
+            overflow: hidden
+            height: 40vh
+        p
+            color: white
+            text-align: center
+            +breakpoint
+                width: 35%
+                padding: 0 80px
+        img
+            width: 100vw
+            margin-left: -20px
+            margin-top: 20px
+            max-width: unset
+            border-top: 20px solid $darkBlue
+            +breakpoint
+                position: absolute
+                top: 0
+                right: 0
+                border-top: none
+                margin-top: 0
+                width: 60%
+                border-left: 20px solid $darkBlue

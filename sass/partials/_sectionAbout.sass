@@ -1,0 +1,73 @@
+section.sectionAbout
+    position: relative
+    &:after
+        content: ''
+        background-image: url('img/texturaPapelRasgado.png')
+        background-size: cover
+        background-repeat: no-repeat
+        display: block
+        height: 2rem
+        position: absolute
+        bottom: 0
+        width: 100%
+    h2
+        color: $darkOffwhite
+    div.sectionWrapper
+        background-color: $darkOffwhite
+        +breakpoint
+            position: relative
+            overflow: hidden
+            display: flex
+            align-items: center
+        div.sectionColumn
+            +breakpoint
+                width: 50%
+        div.left
+            padding: 20px 0
+            p:first-of-type
+                color: white
+                position: relative
+                &:before, &:after
+                    content: ''
+                    display: block
+                    height: 2px
+                    width: 100px
+                    background-color: white
+                    position: absolute
+                    left: 0px
+                &:before
+                    bottom: -10px
+                &:after
+                    top: -10px
+                +breakpoint
+                    width: 80%
+            p:last-of-type
+                color: $pink
+                text-align: center
+                margin-top: 30px
+            a
+                background-color: $pink
+                color: $offwhite
+                margin: 30px auto 0
+                display: table
+        div.right
+            text-align: center
+            background-color: $offwhite
+            padding: 30px
+            width: 100vw
+            margin-left: -20px
+            +breakpoint
+                width: 45%
+                margin-left: 0
+                margin-right: 0px
+                position: absolute
+                right: 0
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+            img
+                height: 50vh
+                +breakpoint
+                    height: 90%
+                    width: auto

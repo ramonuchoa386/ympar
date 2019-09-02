@@ -9,6 +9,7 @@ nav.main-navigation
     img.logo
         width: 95px
         margin: 0 auto
+        transition: all 300ms ease
     button.menu-toggle
         border: none
         background-color: transparent
@@ -58,3 +59,15 @@ nav.toggled
     div.menu-menu-container
         ul.menu.nav-menu
             display: block
+
+nav.sticky
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 2
+    background-color: white
+    & + div#page
+        padding-top: 105px
+    img.logo
+        width: 80px
+        transition: all 300ms ease
