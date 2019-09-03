@@ -1,7 +1,7 @@
 section#hero
     width: 100%
     height: 100vh
-    background-image: linear-gradient(to bottom, rgba($darkBlue, .6), rgba($darkBlue, .6)), url(img/heroBg.jpg)
+    background-image: linear-gradient(to bottom, rgba($darkBlue, .8), rgba($darkBlue, .8)), url(img/heroBg.jpg)
     background-repeat: no-repeat
     background-size: cover
     background-position: top center
@@ -22,6 +22,9 @@ section#hero
         color: rgb(241, 249, 216)
         margin-bottom: 150px
         position: relative
+        font-weight: lighter
+        font-size: xx-large
+        text-transform: uppercase
         &:after
             content: ''
             width: 60px
@@ -33,3 +36,5 @@ section#hero
         background-color: $pink
         &:first-of-type
             margin-bottom: 30px
+        +breakpoint
+            margin: 0 30px
