@@ -19,6 +19,7 @@ section.sectionAbout
             overflow: hidden
             display: flex
             align-items: center
+            height: 90vh
         div.sectionColumn
             +breakpoint
                 width: 50%
@@ -27,6 +28,10 @@ section.sectionAbout
             p:first-of-type
                 color: white
                 position: relative
+                text-transform: uppercase
+                letter-spacing: 1px
+                font-style: italic
+                line-height: 28px
                 &:before, &:after
                     content: ''
                     display: block
@@ -44,7 +49,7 @@ section.sectionAbout
             p:last-of-type
                 color: $pink
                 text-align: center
-                margin-top: 30px
+                margin-top: 60px
             a
                 background-color: $pink
                 color: $offwhite
@@ -55,9 +60,15 @@ section.sectionAbout
             background-color: $offwhite
             padding: 30px
             width: 100vw
+            height: 100vw
             margin-left: -20px
+            background-image: url('img/quem-somos.jpg')
+            background-repeat: no-repeat
+            background-size: 80%
+            background-position: center center
             +breakpoint
                 width: 45%
+                height: 50vh
                 margin-left: 0
                 margin-right: 0px
                 position: absolute

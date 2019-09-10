@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Ramon Uch&ocirc;a Gon&ccedil;alves de Pinho">
+	<link href="https://fonts.googleapis.com/css?family=Spectral:400,400i,500i,600i,700i&display=swap" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>

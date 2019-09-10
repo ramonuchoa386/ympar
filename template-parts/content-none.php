@@ -11,7 +11,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'ympar' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Nada encontrado', 'ympar' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -21,7 +21,7 @@
 			printf(
 				'<p>' . wp_kses(
 					/* translators: 1: link to WP admin new post page. */
-					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'ympar' ),
+					__( 'Tudo certo para criar sua primeira postagem? <a href="%1$s">Clique aqui para iniciar</a>.', 'ympar' ),
 					array(
 						'a' => array(
 							'href' => array(),
@@ -34,14 +34,14 @@
 		elseif ( is_search() ) :
 			?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'ympar' ); ?></p>
+			<p><?php esc_html_e( 'Desculpe, nada foi encontrado com o termo solicitado. Tente novamente com palavras diferentes.', 'ympar' ); ?></p>
 			<?php
 			get_search_form();
 
 		else :
 			?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'ympar' ); ?></p>
+			<p><?php esc_html_e( 'N&atilde;o foi poss&iacute;vel encontrar o que voc&ecirc; est&aacute; buscando.', 'ympar' ); ?></p>
 			<?php
 			get_search_form();
 

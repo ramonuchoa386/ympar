@@ -33,9 +33,32 @@ $(function(){
             var $first = $('#clientsSlider li:first');
 
             $first.animate({ 'margin-left': '-100vw' }, 30000, "linear", function() {
-                $first.remove().css({ 'margin-left': '0px' });
+                $first.remove().css({ 'margin-left': '-20px' });
                 $('#clientsSlider li:last').after($first);
             });
         }
     }
+});
+
+$(document).ready(function(){
+  $('.customer-logos').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false,
+    dots: false,
+    pauseOnHover: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 3
+      }
+    }]
+  });
 });

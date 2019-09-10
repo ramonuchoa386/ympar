@@ -67,7 +67,9 @@ nav.sticky
     z-index: 2
     background-color: white
     & + div#page
-        padding-top: 105px
+        padding-top: 150px
+        +breakpoint
+            padding-top: 105px
     img.logo
         width: 80px
         transition: all 300ms ease
