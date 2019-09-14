@@ -1,0 +1,16 @@
+body:not(.home)
+    div#page.site
+        div#content.site-content
+            div#primary.content-area
+                main#main.site-main
+                    article.page.type-page
+                        padding: 0 20px
+                        +breakpoint
+                            padding: 50px 520px 0
+                        h3
+                            color: $blue
+                            margin-bottom: 10px
+                            &:not(:first-of-type)
+                                margin-top: 30px
+                        p
+                            margin-bottom: 5px
