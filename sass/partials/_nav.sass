@@ -3,13 +3,17 @@ nav.main-navigation
     +breakpoint
         padding-left: 100px
         padding-right: 100px
-        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
     img.logo, button.menu-toggle
         display: block
     img.logo
         width: 95px
         margin: 0 auto
         transition: all 300ms ease
+        +breakpoint
+            margin: unset
     button.menu-toggle
         border: none
         background-color: transparent
@@ -25,11 +29,6 @@ nav.main-navigation
             &:not(:first-of-type)
                 margin-top: 3px
     div.menu-menu-container
-        +breakpoint
-            position: absolute
-            top: 50%
-            left: 10%
-            width: 80%
         ul.menu.nav-menu
             display: none
             list-style: none
@@ -42,9 +41,7 @@ nav.main-navigation
                     margin-top: 30px
                     +breakpoint
                         margin-top: 0px
-                &:nth-of-type(3)
-                    +breakpoint
-                        margin-right: 300px
+                        margin-left: 60px
                 a
                     text-decoration: none
                     text-transform: uppercase
