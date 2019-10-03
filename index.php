@@ -19,7 +19,8 @@ get_header();
 		<main id="main" class="site-main postsListWrapper">
 
 		<?php
-		if ( have_posts() ) :
+		$blogQuery = new WP_Query( array( 'category__not_in' => array( 3, 4, 5 ) ) );
+		if ( $blogQuery->have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) :
 				?>
@@ -30,8 +31,8 @@ get_header();
 				<section class="posts-main">
 					<?php
 						/* Start the Loop */
-						while ( have_posts() ) :
-							the_post();
+						while ( $blogQuery->have_posts() ) :
+							$blogQuery->the_post();
 							/*
 							 * Include the Post-Type-specific template for the content.
 							 * If you want to override this in a child theme, then include a file
