@@ -184,7 +184,7 @@ section.sectionAbout {
         height: 90vh; } }
     @media screen and (min-width: 1000px) {
       section.sectionAbout div.sectionWrapper div.sectionColumn {
-        width: 50%; } }
+        width: 65%; } }
     section.sectionAbout div.sectionWrapper div.left {
       padding: 40px 0; }
       section.sectionAbout div.sectionWrapper div.left p:first-of-type {
@@ -193,7 +193,7 @@ section.sectionAbout {
         text-transform: uppercase;
         letter-spacing: 1px;
         font-style: italic;
-        line-height: 28px; }
+        line-height: 25px; }
         section.sectionAbout div.sectionWrapper div.left p:first-of-type:before, section.sectionAbout div.sectionWrapper div.left p:first-of-type:after {
           content: "";
           display: block;
@@ -449,7 +449,6 @@ section.posts-main {
   section.posts-main a.post-thumbnail {
     margin-bottom: 10px;
     width: 100%;
-    height: 250px;
     display: block;
     overflow: hidden; }
     section.posts-main a.post-thumbnail img {
@@ -481,7 +480,7 @@ body:not(.blog):not(.archive) div#page.site div#content.site-content div#primary
   padding: 0 20px; }
   @media screen and (min-width: 1000px) {
     body:not(.blog):not(.archive) div#page.site div#content.site-content div#primary.content-area main#main.site-main article.post.type-post {
-      padding: 50px 520px 0; } }
+      padding: 50px 10vw 0; } }
   body:not(.blog):not(.archive) div#page.site div#content.site-content div#primary.content-area main#main.site-main article.post.type-post header.entry-header {
     border-bottom: 1px solid grey;
     padding-bottom: 10px;
@@ -507,7 +506,7 @@ body:not(.home) div#page.site div#content.site-content div#primary.content-area 
   padding: 0 20px; }
   @media screen and (min-width: 1000px) {
     body:not(.home) div#page.site div#content.site-content div#primary.content-area main#main.site-main article.page.type-page {
-      padding: 50px 300px 0; } }
+      padding: 50px 10vw 0; } }
   body:not(.home) div#page.site div#content.site-content div#primary.content-area main#main.site-main article.page.type-page h3 {
     color: #1ea5d3;
     margin-bottom: 10px; }
@@ -552,7 +551,7 @@ section.sectionContact div.sectionWrapper {
       color: #1ea5d3; }
   @media screen and (min-width: 1000px) {
     section.sectionContact div.sectionWrapper div#contactForm {
-      width: 40%;
+      width: 50%;
       padding: 0 50px; } }
   section.sectionContact div.sectionWrapper div#contactForm div[role=form] form p input[type=submit] {
     border: none;
