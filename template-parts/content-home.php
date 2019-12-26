@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
-		include('partials/sectionGroups.php');
+		//include('partials/sectionGroups.php');
 		include('partials/sectionAbout.php');
 		include('partials/sectionServices.php');
 		include('partials/sectionInspiration.php');

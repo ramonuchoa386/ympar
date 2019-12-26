@@ -18,7 +18,7 @@
 		<div class='sectionWrapper'>
 			<p>Para maiores informa&ccedil;&otilde;es, preencha o formul&aacute;rio ou entre em contato pelo telefone:<br/ ><a href="tel:+55-21-99024-1620">+55 (21) 99024-1620</a>.</p>
 			<div id='contactForm'>
-				<?php echo do_shortcode('[contact-form-7 id="29" title="Formulário de contato"]'); ?>
+				<?php echo do_shortcode('[contact-form-7 id="18" title="Formulário de contato"]'); ?>
 			</div>
 		</div>
 	</section>

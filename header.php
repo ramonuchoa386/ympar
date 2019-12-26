@@ -24,6 +24,10 @@
 <body <?php body_class(); ?>>
 <?php
 	get_template_part( 'template-parts/header/header', 'nav' );
+
+	if ( is_front_page() ) :
+		get_template_part( 'template-parts/header/header', 'hero' );
+	endif;
 ?>
 
 <div id="page" class="site">

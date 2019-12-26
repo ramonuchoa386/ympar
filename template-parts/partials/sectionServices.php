@@ -26,4 +26,5 @@
             </div>
         </div>
     </div>
+	<a class="btn" href="servicos/" style="background-color: #a53f74; margin: 0 auto; color: white; display: block; width: 200px; text-align: center;">Confira</a>
 </section>

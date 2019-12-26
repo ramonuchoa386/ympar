@@ -9,7 +9,9 @@
 
 get_header();
 ?>
-
+<section class='categoryHero midiasHero' id='hero'>
+        <h1>Veja as matérias que a Ympar apareceu</h1>
+</section>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -18,7 +20,7 @@ get_header();
 			<header class="page-header">
 				<h1 class="page-title screen-reader-text">Mídias</h1>
 			</header><!-- .page-header -->
-			<section class='posts-main'>
+			<section class='posts-main midiasPostList'>
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -29,7 +31,7 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', 'list' );
+				get_template_part( 'template-parts/content', 'midiasList' );
 
 			endwhile;
 			?>

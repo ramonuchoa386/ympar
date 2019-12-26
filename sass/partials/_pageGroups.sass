@@ -1,0 +1,60 @@
+section.posts-main.mainGroupsList
+    width: 100%
+    padding-left: 20px
+    padding-right: 20px
+    background-color: $darkOffwhite
+    +breakpoint
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: space-evenly
+    article.groupsPostListItem
+        padding: 20px
+        width: 100%
+        overflow: hidden
+        position: relative
+        +breakpoint
+            width: 35%
+        &:not(:last-of-type)
+            margin-bottom: 30px
+        & > a
+            height: 250px
+            margin: 0 !important
+            img
+                filter: grayscale(1)
+                transition: all .6s
+                width: auto !important
+                height: 100% !important
+                +breakpoint
+                    width: 100% !important
+        header.entry-header
+            text-align: center
+            h2.entry-title
+                margin-top: 10px
+                a
+                    font-size: 1.2rem
+                    color: $darkBlue
+                    +breakpoint
+                        font-size: 2.2rem
+            p
+                margin-top: -5px
+                font-size: .8rem
+                color: white
+                text-transform: uppercase
+                +breakpoint
+                    font-size: 1.2rem
+            a.groupInfo
+                padding: 6px 32px 4px
+                background-color: $pink
+                color: $darkOffwhite
+                text-transform: uppercase
+                letter-spacing: 1px
+                font-size: .6rem
+                font-weight: bolder
+                margin: 20px auto 0
+                display: block
+                width: fit-content
+
+section.categoryHero.groupsHero#hero
+    background-image: linear-gradient(to bottom, rgba($darkBlue, .8), rgba($darkBlue, .8)), url(img/grupos-bg.jpg)
+    background-position: center center

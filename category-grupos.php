@@ -9,16 +9,14 @@
 
 get_header();
 ?>
-
+	<section class='categoryHero groupsHero' id='hero'>
+			<h1>Grupos de viagens</h1>
+	</section>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title screen-reader-text">Grupos</h1>
-			</header><!-- .page-header -->
-			<section class='posts-main'>
+			<section class='posts-main mainGroupsList'>
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -29,7 +27,7 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', 'list' );
+				get_template_part( 'template-parts/content', 'groupsList' );
 
 			endwhile;
 			?>

@@ -1,0 +1,22 @@
+{
+  "name": "ympar",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramonuchoa386/ympar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramonuchoa386/ympar/issues"
+  },
+  "homepage": "https://github.com/ramonuchoa386/ympar#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4"
+  }
+}

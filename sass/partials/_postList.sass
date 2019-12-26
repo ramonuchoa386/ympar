@@ -1,75 +1,74 @@
 main.postsListWrapper
-	padding: 30px 0
-	background-color: #fafafa
-	header
-		h1
-			color: $blue
-			margin-left: 20px
-			+breakpoint
-				margin-left: 20vw
+    padding: 30px 0
+    background-color: $darkOffwhite
+    header
+        h1
+            color: $blue
+            margin-left: 20px
+            +breakpoint
+                margin-left: 20vw
 
 section.posts-main
-	padding-top: 30px
-	+breakpoint
-		display: flex
-		justify-content: flex-start
-		flex-wrap: wrap
-	article.postList
-		background-color: white
-		width: 90%
-		margin: 0 auto
-		border-radius: 3px
-		border: 1px solid lightGrey
-		position: relative
-		padding: 5px
-		+breakpoint
-			margin: 0 0 30px 5%
-			width: 25%
-		&:not(:last-of-type)
-			margin-bottom: 30px
-			&:after
-				content: ''
-				width: 50%
-				height: 1px
-				background-color: lightGrey
-				position: absolute
-				left: 25%
-				bottom: -15px
-				+breakpoint
-					display: none
-	header.entry-header
-		h2.entry-title
-			margin: 0
-			a
-				color: $blue
-	div.entry-meta
-		color: lightGrey
-		margin-bottom: 10px
-	a.post-thumbnail
-		margin-bottom: 10px
-		width: 100%
-		display: block
-		overflow: hidden
-		img
-			width: 100%
-			height: auto
+    width: calc(100% - 40px)
+    background-color: white
+    padding-top: 30px
+    padding-bottom: 50px
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    +breakpoint
+        width: 70%
+    article.postList
+        background-color: white
+        width: 100%
+        margin: 0 auto
+        position: relative
+        padding: 5px 80px
+        &:not(:last-of-type)
+            margin-bottom: 50px
+            &:after
+                content: ''
+                width: 50%
+                height: 1px
+                background-color: lightGrey
+                position: absolute
+                left: 25%
+                bottom: -15px
+                +breakpoint
+                    display: none
+    header.entry-header
+        h2.entry-title
+            margin: 0
+            a
+                color: $blue
+    div.entry-meta
+        color: $darkOffwhite
+        margin-bottom: 10px
+    a.post-thumbnail
+        margin-bottom: 10px
+        width: 100%
+        display: block
+        overflow: hidden
+        img
+            width: 100%
+            height: auto
 
 nav.navigation.posts-navigation
-	padding-top: 50px
-	div.nav-links
-		+breakpoint
-			text-align: center
-		div
-			text-align: center
-			padding: 10px 0
-			+breakpoint
-				display: inline-block
-				width: 350px
-			a
-				background-color: lightGrey
-				width: 85%
-				display: inline-block
-				padding-top: 5px
-				padding-bottom: 5px
-				color: black
-				text-transform: uppercase
+    padding-top: 50px
+    div.nav-links
+        +breakpoint
+            text-align: center
+        div
+            text-align: center
+            padding: 10px 0
+            +breakpoint
+                display: inline-block
+                width: 350px
+            a
+                background-color: $darkBlue
+                width: 85%
+                display: inline-block
+                padding-top: 5px
+                padding-bottom: 5px
+                color: $darkOffwhite
+                text-transform: uppercase

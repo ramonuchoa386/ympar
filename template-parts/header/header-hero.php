@@ -1,4 +1,4 @@
 <section id='hero'>
-    <p>Conte com a Ympar e</p>
-    <h1>Tenha momentos &uacute;nicos</h1>
+        <h1><span>Fa&ccedil;a parte dos nossos</span><br />grupos de viagens.</h1>
+	<a class="btn" href="category/grupos/">Confira</a>
 </section>
