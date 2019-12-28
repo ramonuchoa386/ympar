@@ -19,7 +19,7 @@ get_header();
 		<main id="main" class="site-main postsListWrapper">
 
 		<?php
-		$blogQuery = new WP_Query( array( 'category__not_in' => array( 3, 4, 5 ) ) );
+		$blogQuery = new WP_Query( array( 'category__not_in' => array( 2, 4, 5 ) ) );
 		if ( $blogQuery->have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) :
